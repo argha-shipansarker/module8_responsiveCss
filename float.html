@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes lafalafi{
+            0%{
+                
+            }
+        }
+        /* .container {
+            display: flex;
+        } */
+        h1 {
+            /* margin-bottom: 300px; */
+            /* visibility: hidden; */
+            display: none;
+        }
+
+        .box {
+            float: left;
+            max-width: 250px;
+            max-height: 150px;
+            background-color: lightblue;
+            margin: 10px;
+            cursor: progress;
+            transition: 2s transform ease-in-out;
+            /* white-space: nowrap; */
+            /* overflow: hidden; */
+            /* position: absolute; */
+            /* white-space: nowrap; */
+            /* overflow: auto; */
+        }
+
+        .box:hover {
+            transform: scale(0.5) rotate(-90deg) translate(0, -60px);
+            transform-origin: top right;
+        }
+
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #one {
+            z-index: 1;
+            background-color: red;
+        }
+
+        #four {
+            z-index: 2;
+
+            transition: .5s transform ease;
+        }
+
+        #four:hover {
+            transform: translate(20px, 40px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="one">
+            <h1>1</h1>
+            <p title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum laboriosam unde fugiat officiis animi
+            nobis cum quia ratione suscipit dicta!">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+                laboriosam unde fugiat officiis animi
+                nobis cum quia ratione suscipit dicta!</p>
+        </div>
+        <div class="box">
+            <h1>2</h1>
+            <p>Saepe rerum tempore eos odio dicta temporibus! Natus ex iusto sapiente nulla facilis consequatur
+                doloremque quas, odio totam dolorem dolor.</p>
+        </div>
+        <div class="box">
+            <h1>3</h1>
+            <p>Excepturi ad autem, nihil, explicabo quis cum magni asperiores iste dignissimos nam ducimus tenetur
+                suscipit facilis doloremque sunt ut neque.</p>
+        </div>
+        <div class="box" id="four">
+            <h1>4</h1>
+            <p>Recusandae, facilis nobis ex laudantium est rerum sunt veniam nulla quas libero ab maxime natus magni,
+                atque repellendus saepe ad? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+                reprehenderit esse doloribus eveniet nisi reiciendis quidem blanditiis voluptatum aliquam, sapiente,
+                distinctio assumenda eum libero dolor quas ipsam beatae, fugiat ab?</p>
+        </div>
+    </div>
+</body>
+
+</html>
